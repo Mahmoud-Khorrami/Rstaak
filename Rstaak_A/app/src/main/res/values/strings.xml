@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Rstaak</string>
+    <string name="validation">در صورت عدم دریافت کد، بعد از 2 دقیقه لینک ارسال مجدد برای شما فعال می گردد. </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="price">قیمت:</string>
+    <string name="city">شهر:</string>
+    <string name="select_city">انتخاب شهر یا روستا</string>
+    <string name="select_shop">انتخاب فروشگاه</string>
+    <string name="select_category">انتخاب دسته</string>
+    <string name="product_title">عنوان محصول یا خدمات</string>
+    <string name="price1">قیمت محصول یا خدمات (تومان)</string>
+    <string name="description">توضیحات</string>
+    <string name="question1">آیا محصول کارکرده است؟</string>
+    <string name="add_picture">افزودن عکس+ (حداکثر 9 عکس)</string>
+    <string name="approve">تایید</string>
+    <string name="ostan">استان</string>
+    <string name="not_found">موردی یافت نشد.</string>
+    <string name="add_advertisement">درج آگهی</string>
+    <string name="category">دسته</string>
+    <string name="shop_name">نام فروشگاه</string>
+    <string name="address">آدرس</string>
+    <string name="create_shop">ایجاد فروشگاه</string>
+    <string name="shop_address">آدرس فروشگاه</string>
+    <string name="shop_phone">شماره تماس فروشگاه</string>
+    <string name="add_image">افزودن عکس+</string>
+    <string name="serach">جستجو</string>
+    <string name="type_a_message">پیامی بنویسید</string>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_products"
+    app:startDestination="@id/fragment0">
+
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.example.rstaak.fragment.F3Products"
+        android:label="Fragment3Products" >
+        <action
+            android:id="@+id/action_fragment3_to_fragment8"
+            app:destination="@id/fragment8" />
+        <action
+            android:id="@+id/action_fragment3_to_fragment9CreateAdvertisement"
+            app:destination="@id/fragment9" />
+        <action
+            android:id="@+id/action_fragment3_to_f61Chat"
+            app:destination="@id/f61Chat" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment0"
+        android:name="com.example.rstaak.fragment.F0SplashScreen"
+        android:label="Fragment0SplashScreen" >
+        <action
+            android:id="@+id/action_fragment0_to_fragment1"
+            app:destination="@id/fragment1"
+            app:popUpTo="@id/fragment0"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_fragment0_to_fragment3"
+            app:destination="@id/fragment3"
+            app:popUpTo="@id/fragment0"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.example.rstaak.fragment.F1Register"
+        android:label="Fragment1Register" >
+        <action
+            android:id="@+id/action_fragment1_to_fragment2"
+            app:destination="@id/fragment2"
+            app:popUpTo="@id/fragment1"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.rstaak.fragment.F2Validation"
+        android:label="Fragment2Validation" >
+        <action
+            android:id="@+id/action_fragment2_to_fragment3"
+            app:destination="@id/fragment3"
+            app:popUpTo="@id/fragment2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment8"
+        android:name="com.example.rstaak.fragment.F31ProductDetails"
+        android:label="fragment8_product_details"
+        tools:layout="@layout/f31_product_details" >
+        <argument
+            android:name="f3ProductModel"
+            app:argType="com.example.rstaak.model.f3_product.F3ProductModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment9"
+        android:name="com.example.rstaak.fragment.F32CreateAdvertisement"
+        android:label="Fragment9CreateAdvertisement" >
+        <action
+            android:id="@+id/action_fragment9_to_cityDialog"
+            app:destination="@id/locationDialog" />
+        <action
+            android:id="@+id/action_fragment9_to_selectShopDialog"
+            app:destination="@id/selectShopDialog" />
+        <action
+            android:id="@+id/action_fragment9_to_categorySelectDialog"
+            app:destination="@id/categorySelectDialog" />
+
+    </fragment>
+    <dialog
+        android:id="@+id/locationDialog"
+        android:name="com.example.rstaak.fragment.F321LocationDialog"
+        android:label="CityDialog" >
+    </dialog>
+    <dialog
+        android:id="@+id/selectShopDialog"
+        android:name="com.example.rstaak.fragment.F322ShopSelectDialog"
+        android:label="fragment10_select_shop"
+        tools:layout="@layout/f322_select_shop_dialog" />
+    <dialog
+        android:id="@+id/categorySelectDialog"
+        android:name="com.example.rstaak.fragment.F323CategorySelectDialog"
+        android:label="CategorySelectDialog" />
+    <fragment
+        android:id="@+id/f61Chat"
+        android:name="com.example.rstaak.fragment.F61Chat"
+        android:label="F61Chat" >
+        <argument
+            android:name="chatStatus"
+            app:argType="com.example.rstaak.model.f3_product.F3ChatStatus" />
+    </fragment>
+</navigation>

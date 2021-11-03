@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_others"
+        android:enabled="true"
+        android:icon="@drawable/more_h"
+        android:title="سایر"
+        android:visible="true" />
+
+    <item android:id="@+id/navigation_chat"
+        android:enabled="true"
+        android:icon="@drawable/chat"
+        android:title="چت"
+        android:visible="true"/>
+    <item
+        android:id="@+id/navigation_my_shop"
+        android:enabled="true"
+        android:icon="@drawable/my_shop"
+        android:title="فروشگاه من"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/navigation_shops"
+        android:enabled="true"
+        android:icon="@drawable/shop"
+        android:title="فروشگا ها"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/navigation_products"
+        android:title="آگهی ها"
+        android:visible="true"
+        android:enabled="true"
+        android:icon="@drawable/advertisment"/>
+</menu>

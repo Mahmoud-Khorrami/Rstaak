@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_shops"
+    app:startDestination="@id/F4Shops">
+
+    <fragment
+        android:id="@+id/F4Shops"
+        android:name="com.example.rstaak.fragment.F4Shops"
+        android:label="fragment4_shops"
+        tools:layout="@layout/f4_shops" >
+        <action
+            android:id="@+id/action_F4Shops_to_F41ShopDetails"
+            app:destination="@id/F41ShopDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/F41ShopDetails"
+        android:name="com.example.rstaak.fragment.F41ShopDetails"
+        android:label="F1Register"
+        tools:layout="@layout/f41_shop_details">
+        <argument
+            android:name="ShopId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_F41ShopDetails_to_f411ShopProducts"
+            app:destination="@id/f411ShopProducts" />
+    </fragment>
+    <fragment
+        android:id="@+id/f411ShopProducts"
+        android:name="com.example.rstaak.fragment.F411ShopProducts"
+        android:label="F411ShopProducts"
+        tools:layout="@layout/f411_shop_products">
+        <argument
+            android:name="shopId"
+            app:argType="string" />
+        <argument
+            android:name="categoryId"
+            app:argType="string" />
+        <argument
+            android:name="categoryName"
+            app:argType="string" />
+    </fragment>
+</navigation>

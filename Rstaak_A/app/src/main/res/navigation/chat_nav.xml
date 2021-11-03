@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_chat"
+    app:startDestination="@id/f6Chats">
+    <fragment
+        android:id="@+id/f6Chats"
+        android:name="com.example.rstaak.fragment.F6Chats"
+        android:label="F6Chats" >
+        <action
+            android:id="@+id/action_f6Chats_to_f61Chat"
+            app:destination="@id/f61Chat" />
+    </fragment>
+    <fragment
+        android:id="@+id/f61Chat"
+        android:name="com.example.rstaak.fragment.F61Chat"
+        android:label="F61Chat" >
+        <argument
+            android:name="chatStatus"
+            app:argType="com.example.rstaak.model.f3_product.F3ChatStatus" />
+    </fragment>
+</navigation>

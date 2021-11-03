@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_my_shop"
+    app:startDestination="@id/f5MyShop">
+    <fragment
+        android:id="@+id/f5MyShop"
+        android:name="com.example.rstaak.fragment.F5MyShop"
+        android:label="F5MyShop"
+        tools:layout="@layout/f5_my_shop">
+        <action
+            android:id="@+id/action_f5MyShop_to_f51NewShop"
+            app:destination="@id/f51NewShop" />
+        <action
+            android:id="@+id/action_f5MyShop_to_f52EditShop"
+            app:destination="@id/f52EditShop" />
+    </fragment>
+    <fragment
+        android:id="@+id/f51NewShop"
+        android:name="com.example.rstaak.fragment.F51NewShop"
+        android:label="F51NewShop"
+        tools:layout="@layout/f51_new_shop"/>
+    <fragment
+        android:id="@+id/f52EditShop"
+        android:name="com.example.rstaak.fragment.F52EditShop"
+        android:label="F52EditShop"
+        tools:layout="@layout/f52_edit_shop">
+        <argument
+            android:name="f4Model"
+            app:argType="com.example.rstaak.model.f4_shop.F4ShopModel" />
+    </fragment>
+</navigation>
